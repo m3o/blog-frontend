@@ -1,5 +1,7 @@
 # Blog Frontend
 
+An example Netlify blog frontend ([https://loving-goodall-44ee08.netlify.app/](https://loving-goodall-44ee08.netlify.app/))
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
 
 ## Development server
