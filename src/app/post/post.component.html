@@ -1,15 +1,23 @@
 <div *ngIf="post">
+  <img [src]="post['image']" />
   <h1>
     {{ post["title"] }}
   </h1>
   <p>
     {{ post["content"] }}
   </p>
+  <br />
   <div><h3>Comments</h3></div>
   <div>
     <div *ngFor="let comment of comments">
       <h4>{{ comment["author"] }} {{ comment["created"] | timeAgo }} </h4>
       {{ comment["message"]}}
+    </div>
+    <div *ngIf="!comments">
+      No comments yet.<br />
+      <p style="color: grey">
+        Add comments with `micro comments new --p={{ post["id"] }} --author=yourname --message="Message content"`.
+      </p>
     </div>
   </div>
 </div>
